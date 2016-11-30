@@ -18,7 +18,8 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/my_nanodegree_apps"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:typeface="monospace"/>
 
     <View
         android:layout_width="match_parent"
@@ -28,56 +29,39 @@
 
     <Button
         android:id="@+id/btnPopularMovies"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/popular_movies"
-        android:textColor="@color/white"/>
+        style="@style/ButtonHome"
+        android:onClick="onButtonClick"
+        android:text="@string/popular_movies"/>
 
     <Button
         android:id="@+id/btnStockHawk"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/stock_hawk"
-        android:textColor="@color/white"/>
+        style="@style/ButtonHome"
+        android:onClick="onButtonClick"
+        android:text="@string/stock_hawk"/>
 
     <Button
         android:id="@+id/btnBuildItBigger"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/build_it_bigger"
-        android:textColor="@color/white"/>
+        style="@style/ButtonHome"
+        android:onClick="onButtonClick"
+        android:text="@string/build_it_bigger"/>
 
     <Button
         android:id="@+id/btnMakeAppMaterial"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/make_your_app_material"
-        android:textColor="@color/white"/>
+        style="@style/ButtonHome"
+        android:onClick="onButtonClick"
+        android:text="@string/make_your_app_material"/>
 
     <Button
         android:id="@+id/btnGoUbiquitous"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
-        android:text="@string/go_ubiquitous"
-        android:textColor="@color/white"/>
+        style="@style/ButtonHome"
+        android:onClick="onButtonClick"
+        android:text="@string/go_ubiquitous"/>
 
     <Button
         android:id="@+id/btnMyOwnApp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        style="@style/ButtonHome"
         android:background="@color/colorAccent"
-        android:text="@string/capstone_my_own_app"
-        android:textColor="@color/white"/>
+        android:onClick="onButtonClick"
+        android:text="@string/capstone_my_own_app"/>
 
 </LinearLayout>

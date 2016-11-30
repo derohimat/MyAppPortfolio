@@ -1,41 +1,22 @@
 package net.derohimat.myappportfolio;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
-    private Button mBtnPopularMovies, mBtnStockHawk, mBtnBuildItBigger,
-            mBtnMakeAppMaterial, mBtnGoUbiquitous, mBtnMyOwnApp;
     private Toast mToast = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mBtnPopularMovies = (Button) findViewById(R.id.btnPopularMovies);
-        mBtnStockHawk = (Button) findViewById(R.id.btnStockHawk);
-        mBtnBuildItBigger = (Button) findViewById(R.id.btnBuildItBigger);
-        mBtnMakeAppMaterial = (Button) findViewById(R.id.btnMakeAppMaterial);
-        mBtnGoUbiquitous = (Button) findViewById(R.id.btnGoUbiquitous);
-        mBtnMyOwnApp = (Button) findViewById(R.id.btnMyOwnApp);
-
-        mBtnPopularMovies.setOnClickListener(this);
-        mBtnStockHawk.setOnClickListener(this);
-        mBtnBuildItBigger.setOnClickListener(this);
-        mBtnMakeAppMaterial.setOnClickListener(this);
-        mBtnGoUbiquitous.setOnClickListener(this);
-        mBtnMyOwnApp.setOnClickListener(this);
     }
 
-    @Override
-    public void onClick(View view) {
-
-        switch (view.getId()) {
+    public void onButtonClick(View v) {
+        switch (v.getId()) {
             case R.id.btnPopularMovies:
                 showToast(R.string.popular_movies);
                 break;
